@@ -5,6 +5,27 @@ hr {
 	margin-bottom: 1.5em;
 }
 
+hr.fancy {
+	display: block;
+	clear: both;
+	margin: 1em 0 2em; /* 0 0 32px */
+	padding: 0;
+	height: 0;
+	border: 0;
+	text-align: center;
+	font-weight: 700;
+	font-size: 2em; /* 32px */
+	line-height: 1; /* 32px */
+}
+
+hr.fancy::after {
+	padding-left: 1em;
+	height: 0;
+	color: #bbb;
+	content: "···";
+	letter-spacing: 1em;
+}
+
 @import "lists";
 
 img {

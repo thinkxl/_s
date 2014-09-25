@@ -1,70 +1,63 @@
-p {
-	margin-bottom: 1.5em;
+p, ul, ol, dl, blockquote {
+	margin-bottom: $font__margin-bottom; 
+	font-size: 1em;
+	line-height: $font__line-height-body;
 }
 
-b, strong {
-	font-weight: bold;
+b, strong { 
+	font-weight: bold; 
 }
 
-dfn, cite, em, i {
-	font-style: italic;
+i, em { 
+	font-style: italic; 
 }
 
-blockquote {
-	margin: 0 1.5em;
+small { 
+	font-size: 80%; 
 }
 
-address {
-	margin: 0 0 1.5em;
+a, a:visited { 
+	outline: none; 
+	color: $font__link-color; 
+	text-decoration: none; 
+}
+
+a:hover { 
+	outline: none; 
+	text-decoration:none; 
+}
+
+a:active, a:focus { 
+	outline: none; 
 }
 
 pre {
-	background: $color__background-pre;
-	font-family: $font__pre;
-	@include font-size(1.5);
-	line-height: $font__line-height-pre;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
+	white-space: pre-wrap;
 }
 
-code, kbd, tt, var {
-	@include font-size(1.5);
+code {
+	color: $font__color;
 	font-family: $font__code;
 }
 
-abbr, acronym {
-	border-bottom: 1px dotted $color__border-abbr;
-	cursor: help;
+blockquote {
+	margin-left: 0;
+	padding-left: 1.618em;
+	border-left: 5px solid lighten($font__color, 70%);
+	color: lighten($font__color, 20%);
 }
 
-mark, ins {
-	background: $color__background-ins;
-	text-decoration: none;
+figure {
+	figcaption {
+		margin-top: 0.382em;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
 }
 
-sup,
-sub {
-	font-size: 75%;
-	height: 0;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
-}
-
-sup {
-	bottom: 1ex;
-}
-
-sub {
-	top: .5ex;
-}
-
-small {
-	font-size: 75%;
-}
-
-big {
-	font-size: 125%;
+figcaption {
+	font-size: 0.695em;
+	color: lighten($font__color, 30%); 
 }
