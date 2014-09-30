@@ -21,99 +21,86 @@ along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normali
 and Blueprint http://www.blueprintcss.org/
 */
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-1.0 Reset
-2.0 Typography
-3.0 Elements
-4.0 Forms
-5.0 Navigation
-	5.1 Links
-	5.2 Menus
-6.0 Accessibility
-7.0 Alignments
-8.0 Clearings
-9.0 Widgets
-10.0 Content
-	10.1 Posts and pages
-	10.2 Asides
-	10.3 Comments
-11.0 Infinite scroll
-12.0 Media
-	12.1 Captions
-	12.2 Galleries
-13.0 Theme
+/*
+ * Contents
+ *
+ * Normalize 
+ * Typography
+ * Forms
+ * Images
+ * Header 
+ * Container
+ * Footer 
+ * Grid 
+ * Sidebar
+ * Navigation
+ * Modal
+ * Buttons
+ * Archive
+ * Article
+ */
 
---------------------------------------------------------------*/
-@import "variables-site/variables-site";
-@import "mixins/mixins-master";
+// Settings
+@import "variables.scss";
+@import "base/functions.scss";
+@import "base/box-sizing";
 
-/*--------------------------------------------------------------
-1.0 Reset
---------------------------------------------------------------*/
-@import "reset";
+/* Normalize */
+@import "base/normalize";
 
-/*--------------------------------------------------------------
-2.0 Typography
---------------------------------------------------------------*/
-@import "typography/typography";
+/* Typography */
+@import "base/typography";
 
-/*--------------------------------------------------------------
-3.0 Elements
---------------------------------------------------------------*/
-@import "elements/elements";
+/* Forms */
+@import "base/forms";
 
-/*--------------------------------------------------------------
-4.0 Forms
---------------------------------------------------------------*/
-@import "forms/forms";
+/* Images */
+@import "base/images";
 
-/*--------------------------------------------------------------
-5.0 Navigation
---------------------------------------------------------------*/
-@import "navigation/navigation";
+/* Header */
+@import "layout/header";
 
-/*--------------------------------------------------------------
-6.0 Accessibility
---------------------------------------------------------------*/
-@import "modules/accessibility";
+/* Container */
+@import "layout/container";
 
-/*--------------------------------------------------------------
-7.0 Alignments
---------------------------------------------------------------*/
-@import "modules/alignments";
+/* Footer */
+@import "layout/footer";
 
-/*--------------------------------------------------------------
-8.0 Clearings
---------------------------------------------------------------*/
-@import "modules/clearings";
+/* Grid */
+@import "layout/grid";
 
-/*--------------------------------------------------------------
-9.0 Widgets
---------------------------------------------------------------*/
-@import "site/secondary/widgets";
+/* Sidebar */
+@import "layout/sidebar";
 
-/*--------------------------------------------------------------
-10.0 Content
---------------------------------------------------------------*/
-@import "site/site";
+/* Navigation */
+@import "ui/navigation";
 
-/*--------------------------------------------------------------
-11.0 Infinite scroll
---------------------------------------------------------------*/
-@import "modules/infinite-scroll";
+/* Modal */
+@import "ui/modal";
 
-/*--------------------------------------------------------------
-12.0 Media
---------------------------------------------------------------*/
-@import "media/media";
+/* Buttons */
+@import "ui/buttons";
 
-/*--------------------------------------------------------------
-13.0 Theme 
---------------------------------------------------------------*/
-@import "theme/theme.scss";
+/* Widgets */
+@import "ui/widgets";
 
+/* Comments */
+@import "ui/comments";
 
-// @import "vendors/hyx";
-// @include edit();
+/* Infinite scroll */
+@import "ui/infinite-scroll";
+
+/* Media */
+@import "ui/media";
+
+/* Captions */
+@import "ui/captions";
+
+/* Galleries */
+@import "ui/galleries";
+
+/* Archive */
+@import "pages/archive";
+
+/* Article */
+@import "pages/posts-pages";
