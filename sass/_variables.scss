@@ -4,7 +4,7 @@ $baseline: 1.618rem;
 
 // Grid Variables.
 $grid-columns: 12;
-$grid-gutter: 3%;
+$grid-gutter: 1%;
 
 // Typography Variables.
 $text-color: #333;
@@ -37,6 +37,10 @@ $btn-primary-text-color: lighten($btn-primary-bg, 50%);
 // Form Variables.
 $icon-roundness: 3px;
 $icon-border-color: #333;
+
+$field-border-color: #ccc;
+$field-error-color: brown;
+$field-required-color: $field-error-color;
 
 // Feedback Variables.
 $information-color: #439ccf;

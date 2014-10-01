@@ -1,0 +1,72 @@
+@import "../variables";
+
+form {
+	.field-group {
+		margin-bottom: $base-margin-bottom;
+
+		&:last-child {
+			margin-bottom: 0;	
+		}
+
+		label {
+			display: block;
+			font-weight: bold;
+		}
+
+		input:not([class^="btn"]),
+		textarea {
+			border: 1px solid $field-border-color;
+			padding: 0.618rem;
+
+			&:focus,
+			&:hover {
+				border-color: darken($field-border-color, 16.646%);	
+				outline: none;
+			}
+
+			&.field-fw {
+				width: 100%;	
+			}
+		}
+
+		.help {
+			font-size: 0.718rem;
+			margin: 0.618rem 0 0;
+		}
+
+		.form-help {
+			margin-top: 0.618rem;	
+			color: $muted-text-color;
+			font-size: 0.818rem;
+			font-style: italic;
+		}
+	}
+
+	.field-error {
+		label,
+		.help,
+		input {
+			color: $field-error-color;	
+			border-color: lighten($field-error-color, 40%) !important;
+		}
+	}
+
+	.required {
+		color: $field-required-color;
+	}
+
+	fieldset {
+		margin-bottom: 1rem;
+		border: 1px solid $field-border-color;
+		padding: $baseline;
+
+		legend {
+			padding: 0 0.618rem;
+			font-weight: bold;
+		}
+
+		p:last-child {
+			margin-bottom: 0;	
+		}
+	}
+}

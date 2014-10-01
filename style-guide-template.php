@@ -323,60 +323,60 @@ get_header(); ?>
 					</div> <!-- .container -->
 					</section>
 
-					<section>
-						<div class="container">
-							<h2>Icons</h2>
-								
-							<hr>
+					<!-- <section> -->
+					<!-- 	<div class="container"> -->
+					<!-- 		<h2>Icons</h2> -->
+					<!-- 			 -->
+					<!-- 		<hr> -->
 
-							<div class="row">
-								<div class="col-1-2">
-									<h4>Bordered icons</h4>
+					<!-- 		<div class="row"> -->
+					<!-- 			<div class="col&#45;1&#45;2"> -->
+					<!-- 				<h4>Bordered icons</h4> -->
 
-									<div class="icon-circle">
-										<i class="fa fa-coffee"></i>
-									</div> <!-- .icon-circle -->
+					<!-- 				<div class="icon&#45;circle"> -->
+					<!-- 					<i class="fa fa&#45;coffee"></i> -->
+					<!-- 				</div> <!&#45;&#45; .icon&#45;circle &#45;&#45;> -->
 
-									<p>Circle</p>
+					<!-- 				<p>Circle</p> -->
 
-									<div class="icon-rounded">
-										<i class="fa fa-coffee"></i>
-									</div> <!-- .icon-rounded -->
+					<!-- 				<div class="icon&#45;rounded"> -->
+					<!-- 					<i class="fa fa&#45;coffee"></i> -->
+					<!-- 				</div> <!&#45;&#45; .icon&#45;rounded &#45;&#45;> -->
 
-									<p>Rounded</p>
+					<!-- 				<p>Rounded</p> -->
 
-									<div class="icon-square">
-										<i class="fa fa-coffee"></i>
-									</div> <!-- .icon-square -->
+					<!-- 				<div class="icon&#45;square"> -->
+					<!-- 					<i class="fa fa&#45;coffee"></i> -->
+					<!-- 				</div> <!&#45;&#45; .icon&#45;square &#45;&#45;> -->
 
-									<p>Square</p>
-								</div> <!-- .col-1-2 -->
-								
-								<div class="col-1-2">
-									<h4>Icon sizes</h4>
+					<!-- 				<p>Square</p> -->
+					<!-- 			</div> <!&#45;&#45; .col&#45;1&#45;2 &#45;&#45;> -->
+					<!-- 			 -->
+					<!-- 			<div class="col&#45;1&#45;2"> -->
+					<!-- 				<h4>Icon sizes</h4> -->
 
-									<div class="icon-circle">
-										<i class="fa fa-coffee"></i>
-									</div> <!-- .icon-circle -->
+					<!-- 				<div class="icon&#45;circle"> -->
+					<!-- 					<i class="fa fa&#45;coffee"></i> -->
+					<!-- 				</div> <!&#45;&#45; .icon&#45;circle &#45;&#45;> -->
 
-									<p>Circle</p>
+					<!-- 				<p>Circle</p> -->
 
-									<div class="icon-rounded icon-large">
-										<i class="fa fa-coffee"></i>
-									</div> <!-- .icon-rounded -->
+					<!-- 				<div class="icon&#45;rounded icon&#45;large"> -->
+					<!-- 					<i class="fa fa&#45;coffee"></i> -->
+					<!-- 				</div> <!&#45;&#45; .icon&#45;rounded &#45;&#45;> -->
 
-									<p>Rounded</p>
+					<!-- 				<p>Rounded</p> -->
 
-									<div class="icon-square icon-huge">
-										<i class="fa fa-coffee"></i>
-									</div> <!-- .icon-square -->
+					<!-- 				<div class="icon&#45;square icon&#45;huge"> -->
+					<!-- 					<i class="fa fa&#45;coffee"></i> -->
+					<!-- 				</div> <!&#45;&#45; .icon&#45;square &#45;&#45;> -->
 
-									<p>Square</p>
+					<!-- 				<p>Square</p> -->
 
-								</div> <!-- .col-1-2 -->
-							</div> <!-- .row -->
-						</div> <!-- .container -->
-					</section>
+					<!-- 			</div> <!&#45;&#45; .col&#45;1&#45;2 &#45;&#45;> -->
+					<!-- 		</div> <!&#45;&#45; .row &#45;&#45;> -->
+					<!-- 	</div> <!&#45;&#45; .container &#45;&#45;> -->
+					<!-- </section> -->
 
 					<section class="container">
 						<h2>Feedback</h2>

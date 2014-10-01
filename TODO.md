@@ -1,5 +1,5 @@
 # TODO
 
-- [ ] Add forms styles
-- [ ] Add Feedback styles
-- [ ] Add Icons styles and font-awesome
+- [x] Add forms styles
+- [x] Add Feedback styles
+- [-] Add Icons styles and font-awesome - not yet

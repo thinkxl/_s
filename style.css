@@ -560,6 +560,50 @@ table tr:nth-child(even) {
   background: #eee; }
 
 /* Forms */
+form .field-group {
+  margin-bottom: 1.618rem; }
+  form .field-group:last-child {
+    margin-bottom: 0; }
+  form .field-group label {
+    display: block;
+    font-weight: bold; }
+  form .field-group input:not([class^="btn"]),
+  form .field-group textarea {
+    border: 1px solid #ccc;
+    padding: 0.618rem; }
+    form .field-group input:not([class^="btn"]):focus, form .field-group input:not([class^="btn"]):hover,
+    form .field-group textarea:focus,
+    form .field-group textarea:hover {
+      border-color: #a2a2a2;
+      outline: none; }
+    form .field-group input:not([class^="btn"]).field-fw,
+    form .field-group textarea.field-fw {
+      width: 100%; }
+  form .field-group .help {
+    font-size: 0.718rem;
+    margin: 0.618rem 0 0; }
+  form .field-group .form-help {
+    margin-top: 0.618rem;
+    color: #5d5d5d;
+    font-size: 0.818rem;
+    font-style: italic; }
+form .field-error label,
+form .field-error .help,
+form .field-error input {
+  color: brown;
+  border-color: #ebb0b0 !important; }
+form .required {
+  color: brown; }
+form fieldset {
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  padding: 1.618rem; }
+  form fieldset legend {
+    padding: 0 0.618rem;
+    font-weight: bold; }
+  form fieldset p:last-child {
+    margin-bottom: 0; }
+
 /* Images */
 img {
   max-width: 100%;
@@ -609,8 +653,8 @@ img {
   @media handheld, only screen and (min-width: 768px) {
     .col-1-2 {
       float: left;
-      width: 48.5%;
-      margin-right: 3%; }
+      width: 49.5%;
+      margin-right: 1%; }
       .col-1-2:last-child {
         margin-right: 0; } }
 
@@ -620,8 +664,8 @@ img {
   @media handheld, only screen and (min-width: 768px) {
     .col-1-3 {
       float: left;
-      width: 31.33333%;
-      margin-right: 3%; }
+      width: 32.66667%;
+      margin-right: 1%; }
       .col-1-3:last-child {
         margin-right: 0; } }
 
@@ -631,8 +675,8 @@ img {
   @media handheld, only screen and (min-width: 768px) {
     .col-1-4 {
       float: left;
-      width: 22.75%;
-      margin-right: 3%; }
+      width: 24.25%;
+      margin-right: 1%; }
       .col-1-4:last-child {
         margin-right: 0; } }
 
@@ -900,6 +944,39 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/* Feedback */
+[class^="alert-"] {
+  border: 1px solid;
+  border-bottom-width: 4px;
+  margin: 1em 0;
+  padding: 1.125rem; }
+  [class^="alert-"] p {
+    margin: 0; }
+
+.alert-information {
+  border-color: #bddcee;
+  background-color: #fafcfe; }
+  .alert-information strong {
+    color: #439ccf; }
+
+.alert-error {
+  border-color: #f6a79f;
+  background-color: #fde7e5; }
+  .alert-error strong {
+    color: #e72915; }
+
+.alert-warning {
+  border-color: #ffa76d;
+  background-color: #ffd5ba; }
+  .alert-warning strong {
+    color: #d35400; }
+
+.alert-success {
+  border-color: #bedf91;
+  background-color: #e1f0cc; }
+  .alert-success strong {
+    color: #74a730; }
 
 /* Archive */
 /* Article */

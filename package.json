@@ -22,6 +22,7 @@
     "grunt": "~0.4.2",
     "grunt-contrib-sass": "latest",
     "grunt-contrib-watch": "~0.5.3",
+    "jit-grunt": "^0.8.0",
     "matchdep": "~0.3.0"
   },
   "dependencies": {
