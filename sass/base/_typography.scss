@@ -1,0 +1,163 @@
+// @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+
+html {
+	font-size: 16px;
+}
+
+body {
+	color: $text-color;
+	font-family: $base-font-family;	
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: $headings-margin-bottom;
+	line-height: $headings-line-height;
+}
+
+h1 { font-size: 2.618rem; }
+h2 { font-size: 1.82rem; }
+h3 { font-size: 1.618rem; }
+h4 { font-size: 1.125rem; }
+h5 { font-size: 1rem; }
+
+h6 {
+	text-transform: uppercase;
+	font-size: 0.695rem;
+}
+
+p, ul, ol, dl, blockquote {
+	margin-bottom: $base-margin-bottom;
+	font-size: 1rem;
+	line-height: $base-line-height;
+}
+
+ol,
+ul {
+	margin-left: 0.695rem;
+}
+
+ul { list-style-type: disc; }
+ol { list-style-type: decimal; }
+
+ol ul,
+ul ol,
+ol ol,
+ul ul {
+	margin-bottom: 0;
+}
+
+nav ul, nav ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+i, em {
+	font-style: italic;
+}
+
+small {
+	font-size: 80%;
+}
+
+a, a:visited, a:hover {
+	text-decoration: none;
+	outline: none;
+}
+
+a, a:visited { color: $link-color; }
+a:hover { color: darken($link-color, 16.646%); }
+
+a:active, a:focus { outline: none; }
+
+pre { white-space: pre-wrap; }
+
+code {
+	color: $code-text-color;
+	font-family: $code-font-family;
+}
+
+blockquote {
+	margin-left: 0;
+	padding-left: 1.618em;
+	border-left: 5px solid lighten($text-color, 70%);
+	color: lighten($text-color, 20%);
+}
+
+hr {
+	margin-bottom: $base-margin-bottom;
+	height: 1px;
+	background-color: #ccc;
+	border: 0;
+}
+
+hr.fancy {
+	display: block;
+	clear: both;
+	margin: 1em 0 2em; /* 0 0 32px */
+	padding: 0;
+	height: 0;
+	border: 0;
+	text-align: center;
+	font-weight: 700;
+	font-size: 2em; /* 32px */
+	line-height: 1; /* 32px */
+}
+
+hr.fancy::after {
+	padding-left: 1em;
+	height: 0;
+	color: #bbb;
+	content: "···";
+	letter-spacing: 1em;
+}
+
+figure {
+	figcaption {
+		margin-top: 0.382em;
+		}
+	
+	p {
+		margin-bottom: 0;
+		}
+}
+
+figcaption {
+	font-size: 0.695em;
+	color: lighten($text-color, 30%); 
+}
+
+table {
+	margin: 0;
+	padding: 0;
+}
+
+table th,
+table td {
+	padding: 10px 20px;
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+}
+
+table th {
+	border-width: 2px;
+}
+
+table td {
+	color: #666;
+}
+
+table tr:last-child th,
+table tr:last-child td {
+	border-bottom: none;
+}
+
+table tr:nth-child(even) {
+	background: #eee;
+}	

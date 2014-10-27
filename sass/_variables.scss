@@ -3,6 +3,7 @@ $site-width: 65rem;
 $baseline: 1.618rem;
 
 // Grid Variables.
+<<<<<<< HEAD
 $column-count: 12;
 $gutter: 3%;
 
@@ -10,26 +11,55 @@ $gutter: 3%;
 $text-color: #333;
 $link-color: brown;
 $muted-text-color: lighten($text-color, 15%);
+=======
+$grid-columns: 12;
+$grid-gutter: 1%;
+
+// Typography Variables.
+$text-color: #333;
+$link-color: #0f82bd;
+$muted-text-color: lighten($text-color, 16.646%);
+
+>>>>>>> 5c22f580edc0b048a3bbf5c98eb38cace7b34c2e
 $base-font-family: 'PT Sans', sans-serif;
 $base-font-size: 1rem;
 $base-line-height: 1.618;
 $base-margin-bottom: $baseline;
+<<<<<<< HEAD
 $measure: 806px;
 $headings-margin-bottom: $base-margin-bottom;
 $headings-line-height: 1.125;
 $code-font-family: 'DejaVu Sans Mono', Inconsolata, Consolas, 'Lucida Console', monospace;
+=======
+
+$headings-margin-bottom: $base-margin-bottom;
+$headings-line-height: 1.125;
+
+$code-font-family: 'Dejavu Sans Mono', Iconsolata, Consolas, monospace;
+>>>>>>> 5c22f580edc0b048a3bbf5c98eb38cace7b34c2e
 $code-text-color: brown;
 
 // Button Variables.
 $btn-roundness: 0.236rem;
+<<<<<<< HEAD
 $btn-small-font-size: 0.618rem;
 $btn-large-font-size: $baseline;
 $btn-default-bg: #eee;
 $btn-default-text-color: #333;
+=======
+
+$btn-small-font-size: 0.618rem;
+$btn-large-font-size: $baseline;
+
+$btn-default-bg: #eee;
+$btn-default-text-color: #333;
+
+>>>>>>> 5c22f580edc0b048a3bbf5c98eb38cace7b34c2e
 $btn-primary-bg: #0078E7;
 $btn-primary-text-color: lighten($btn-primary-bg, 50%);
 
 // Form Variables.
+<<<<<<< HEAD
 $field-border-color: #ccc;
 $field-error-color: brown;
 $field-required-color: brown;
@@ -37,6 +67,14 @@ $field-required-color: brown;
 // Icon Variables.
 $icon-roundness: 3.778px;
 $icon-border-color: #333;
+=======
+$icon-roundness: 3px;
+$icon-border-color: #333;
+
+$field-border-color: #ccc;
+$field-error-color: brown;
+$field-required-color: $field-error-color;
+>>>>>>> 5c22f580edc0b048a3bbf5c98eb38cace7b34c2e
 
 // Feedback Variables.
 $information-color: #439ccf;

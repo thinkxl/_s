@@ -6,6 +6,40 @@
  */
 
 /**
+ * Option Tree Setup
+ */
+
+/**
+ * This will hide the settings & documentation pages.
+ */
+// add_filter( 'ot_show_pages', '__return_false' );
+
+/**
+ * Set theme mode true
+ */
+// add_filter( 'ot_theme_mode', '__return_true' );
+
+/**
+ * Hide layout option from option tree
+ */
+// add_filter( 'ot_show_new_layout', '__return_false' );
+
+/**
+ * Required: include OptionTree.
+ */
+// include_once( 'option-tree/ot-loader.php' );
+
+/**
+ * Theme Options
+ */
+// include_once( 'option-tree/assets/theme-mode/demo-theme-options.php' );
+
+/**
+ * Meta Boxes
+ */
+// include_once( 'option-tree/assets/theme-mode/demo-meta-boxes.php' );
+
+/**
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {

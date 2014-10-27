@@ -16,6 +16,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  _s is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
 */
 
+<<<<<<< HEAD
 /* 
  * Settings 
  */
@@ -40,3 +41,91 @@ Use it to make something cool, have fun, and share what you've learned with othe
  */
 
 @import "type/type";
+=======
+/*
+ * Contents
+ *
+ * Normalize 
+ * Typography
+ * Forms
+ * Images
+ * Header 
+ * Container
+ * Footer 
+ * Grid 
+ * Sidebar
+ * Navigation
+ * Modal
+ * Buttons
+ * Archive
+ * Article
+ */
+
+// Settings
+@import "variables.scss";
+@import "base/functions.scss";
+@import "base/box-sizing";
+
+/* Normalize */
+@import "base/normalize";
+
+/* Typography */
+@import "base/typography";
+
+/* Forms */
+@import "base/forms";
+
+/* Images */
+@import "base/images";
+
+/* Header */
+@import "layout/header";
+
+/* Container */
+@import "layout/container";
+
+/* Footer */
+@import "layout/footer";
+
+/* Grid */
+@import "layout/grid";
+
+/* Sidebar */
+@import "layout/sidebar";
+
+/* Navigation */
+@import "ui/navigation";
+
+/* Modal */
+@import "ui/modal";
+
+/* Buttons */
+@import "ui/buttons";
+
+/* Widgets */
+@import "ui/widgets";
+
+/* Comments */
+@import "ui/comments";
+
+/* Infinite scroll */
+@import "ui/infinite-scroll";
+
+/* Media */
+@import "ui/media";
+
+/* Captions */
+@import "ui/captions";
+
+/* Galleries */
+@import "ui/galleries";
+
+/* Feedback */
+@import "ui/feedback";
+
+/* Archive */
+@import "pages/archive";
+
+/* Article */
+@import "pages/posts-pages";
+>>>>>>> 5c22f580edc0b048a3bbf5c98eb38cace7b34c2e
