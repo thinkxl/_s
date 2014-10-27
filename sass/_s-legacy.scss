@@ -1,3 +1,56 @@
+/*
+ * Alignments 
+ */
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	display: block;
+	margin: 0 auto;
+}
+
+/*
+ * Asides
+ *
+ * Not sure what this means, but it was in the original styles
+ */
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/*
+ * Posts & Pages
+ */
+
+.sticky {
+	display: block;
+}
+.hentry {
+	margin: 0 0 1.5em;
+}
+.byline,
+.updated:not(.published){
+	display: none;
+}
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+/*
+ * Navigation 
+ */
+
 .main-navigation {
 	clear: both;
 	display: block;
