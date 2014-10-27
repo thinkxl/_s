@@ -9,7 +9,6 @@ html {
 		 -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 }
-
 *, *:before, *:after {
 	-webkit-box-sizing: inherit;
 		 -moz-box-sizing: inherit;
@@ -25,7 +24,7 @@ body {
 html {
 	font-family: "PT Sans", sans-serif;
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: $base-line-height;
 
 	@media (min-width: 38em) {
 		font-size: 20px;
@@ -33,7 +32,7 @@ html {
 }
 
 body {
-	color: #515151;
+	color: $text-color;
 	background-color: #fff;
 	-webkit-text-size-adjust: 100%;
 	    -ms-text-size-adjust: 100%;
@@ -56,10 +55,21 @@ a {
 }
 
 /* Images */
+figure,
 img {
 	display: block;
 	max-width: 100%;
-	margin-bottom: 1rem;
+	height: auto;
+	margin: 0 0 1rem;
+}
+
+/* Navigation */
+nav {
+	ul, ol {
+		margin-left: 0;
+		padding-left: 0;
+		list-style: none;
+	}
 }
 
 /* Tables */

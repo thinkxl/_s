@@ -1,0 +1,45 @@
+/*
+ * Toolbox 
+ *
+ * Everything that can be re-used.
+ */
+
+/* Classes */
+.centered {
+	display: block;
+	margin: 0 auto;
+}
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	display: block;
+	margin: 0 auto;
+}
+
+/* Mixins */
+@mixin respond-to($size) {
+	@media only screen and (max-width: $size) {
+		@content;
+	}
+}
+
+@mixin button($background-color, $text-color) {
+	background-color: $background-color;
+	color: $text-color;
+
+	&:hover {
+		background-color: darken($background-color, 15%);
+	}
+
+	&:active {
+		background-color: darken($background-color, 12%);
+	}
+}

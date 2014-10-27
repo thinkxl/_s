@@ -16,116 +16,29 @@ Use it to make something cool, have fun, and share what you've learned with othe
  _s is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
 */
 
-<<<<<<< HEAD
-/* 
- * Settings 
- */
-
-@import "variables";
-
-/*
- * _s legacy
- * Styles that I still need to update, include on the styles or delete.
- */
-
-@import "_s-legacy";
-
-/*
- * Base 
- */
-
-@import "base/base";
-
-/*
- * Typography 
- */
-
-@import "type/type";
-=======
-/*
- * Contents
- *
- * Normalize 
- * Typography
- * Forms
- * Images
- * Header 
- * Container
- * Footer 
- * Grid 
- * Sidebar
- * Navigation
- * Modal
- * Buttons
- * Archive
- * Article
- */
+// * { background-color: rgba(0,0,0,0.1); }
 
 // Settings
-@import "variables.scss";
-@import "base/functions.scss";
-@import "base/box-sizing";
+@import "variables";
 
-/* Normalize */
-@import "base/normalize";
+// Base
+@import "base/base";
+@import "base/toolbox";
+@import "type/type";
 
-/* Typography */
-@import "base/typography";
-
-/* Forms */
-@import "base/forms";
-
-/* Images */
-@import "base/images";
-
-/* Header */
+// Layout
 @import "layout/header";
-
-/* Container */
-@import "layout/container";
-
-/* Footer */
+@import "layout/navigation";
+@import "layout/main";
+@import "layout/sidebar";
+@import "layout/comments";
 @import "layout/footer";
 
-/* Grid */
-@import "layout/grid";
+@import "layout/media";
+@import "layout/page-and-post";
 
-/* Sidebar */
-@import "layout/sidebar";
+// Page specific 
+@import "page/home";
 
-/* Navigation */
-@import "ui/navigation";
-
-/* Modal */
-@import "ui/modal";
-
-/* Buttons */
+// Ui
 @import "ui/buttons";
-
-/* Widgets */
-@import "ui/widgets";
-
-/* Comments */
-@import "ui/comments";
-
-/* Infinite scroll */
-@import "ui/infinite-scroll";
-
-/* Media */
-@import "ui/media";
-
-/* Captions */
-@import "ui/captions";
-
-/* Galleries */
-@import "ui/galleries";
-
-/* Feedback */
-@import "ui/feedback";
-
-/* Archive */
-@import "pages/archive";
-
-/* Article */
-@import "pages/posts-pages";
->>>>>>> 5c22f580edc0b048a3bbf5c98eb38cace7b34c2e
