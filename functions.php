@@ -17,7 +17,7 @@
 /**
  * Set theme mode true
  */
-// add_filter( 'ot_theme_mode', '__return_true' );
+add_filter( 'ot_theme_mode', '__return_true' );
 
 /**
  * Hide layout option from option tree
@@ -27,7 +27,7 @@
 /**
  * Required: include OptionTree.
  */
-// include_once( 'option-tree/ot-loader.php' );
+include_once( 'option-tree/ot-loader.php' );
 
 /**
  * Theme Options
@@ -38,6 +38,9 @@
  * Meta Boxes
  */
 // include_once( 'option-tree/assets/theme-mode/demo-meta-boxes.php' );
+
+// Test 
+require( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' );
 
 /**
  * Set the content width based on the theme's design and stylesheet.
