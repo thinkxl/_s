@@ -1,0 +1,105 @@
+/*
+ *  Typography
+ */
+
+/* Modular Scale 
+http://modularscale.com/scale/?px1=16&px2=18&ra1=1.618&ra2=0
+---------------------- 
+16px @ 1:1.618 
+18px @ 1:1.618 
+----------------------*/
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+	margin-top: $base-margin-top;
+	margin-bottom: 0.382#{$base-unit};
+  line-height: $base-headings-line-height; /* 1 */
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4, h5, h6 {
+  font-size: $h4-font-size;
+}
+
+/* Paragraph */
+p {
+	margin-top: $base-margin-top;
+
+	@if $indented-paragraphs {
+		margin-bottom: 0;
+
+		& + p {
+			text-indent: 2em;		
+			margin-top: 0;
+		}
+	} @else {
+		margin-bottom: $base-margin-bottom;
+	}
+}
+
+/* Lists */
+nav ul,
+nav ol {
+ list-style: none;
+ margin-left: 0;
+ padding-left: 0;
+}
+
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: $base-margin-bottom;
+  line-height: $base-line-height;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+}
+
+/* Better styled `<hr>` */
+hr {
+  position: relative;
+  margin: 1.5#{$base-unit} 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
+}
+
+/* Code */
+pre {
+	margin-left: 1.125#{$base-unit};
+	white-space: pre-wrap;
+}
+
+code {
+	color: $base-code-text-color;
+}
+
+kbd,
+samp {
+	background-color: #eee;
+}
+
+/* Quotes */
+blockquote {
+	padding-right: 5#{$base-unit};
+	padding-left: 1.25#{$base-unit};
+  margin: 1#{$base-unit} 0;
+  border-left: .25#{$base-unit} solid lighten($base-text-color, 65%);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}

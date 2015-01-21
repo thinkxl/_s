@@ -1,0 +1,34 @@
+// General
+
+$base-unit: 'rem' !default;
+$site-width: 65#{$base-unit};
+$baseline: 1#{$base-unit};
+
+// Base Variables.
+
+$base-line-height: 1.618;
+$base-margin-top: $baseline;
+$base-margin-bottom: $baseline;
+
+$base-text-color: #333;
+$base-text-link-color: brown;
+$base-text-muted-color: lighten($base-text-color, 15%);
+
+$base-font-family: 'PT Sans', sans-serif;
+$base-font-size: 16px;
+
+$base-headings-color: $base-text-color;
+$base-headings-margin-bottom: $base-margin-bottom;
+$base-headings-line-height: 1.125;
+
+$base-code-font-family: 'DejaVu Sans Mono', Inconsolata, Consolas, 'Lucida Console', monospace;
+$base-code-text-color: brown;
+
+// Typography
+
+$indented-paragraphs: false !default;
+
+$h1-font-size: 2.618#{$base-unit};
+$h2-font-size: 1.618#{$base-unit};
+$h3-font-size: 1.125#{$base-unit};
+$h4-font-size: 1#{$base-unit};

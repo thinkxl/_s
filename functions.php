@@ -6,43 +6,6 @@
  */
 
 /**
- * Option Tree Setup
- */
-
-/**
- * This will hide the settings & documentation pages.
- */
-// add_filter( 'ot_show_pages', '__return_false' );
-
-/**
- * Set theme mode true
- */
-add_filter( 'ot_theme_mode', '__return_true' );
-
-/**
- * Hide layout option from option tree
- */
-// add_filter( 'ot_show_new_layout', '__return_false' );
-
-/**
- * Required: include OptionTree.
- */
-include_once( 'option-tree/ot-loader.php' );
-
-/**
- * Theme Options
- */
-// include_once( 'option-tree/assets/theme-mode/demo-theme-options.php' );
-
-/**
- * Meta Boxes
- */
-// include_once( 'option-tree/assets/theme-mode/demo-meta-boxes.php' );
-
-// Test 
-require( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' );
-
-/**
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
@@ -69,6 +32,14 @@ function _s_setup() {
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
+
+	/*
+	 * Let WordPress manage the document title.
+	 * By adding theme support, we declare that this theme does not use a
+	 * hard-coded <title> tag in the document head, and expect WordPress to
+	 * provide it for us.
+	 */
+	add_theme_support( 'title-tag' );
 
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
@@ -98,7 +69,7 @@ function _s_setup() {
 		'aside', 'image', 'video', 'quote', 'link',
 	) );
 
-	// Setup the WordPress core custom background feature.
+	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( '_s_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',

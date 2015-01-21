@@ -1,4 +1,16 @@
-.container {
-	width: 45rem;
-	margin: 0 auto;
+/* Alignments */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5#{$base-unit};
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5#{$base-unit};
+}
+
+.aligncenter {
+	@include center-block;
 }

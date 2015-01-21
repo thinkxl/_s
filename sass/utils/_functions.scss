@@ -24,13 +24,6 @@
 	margin: 0 auto;
 }
 
-/* Mixins */
-@mixin respond-to($size) {
-	@media only screen and (max-width: $size) {
-		@content;
-	}
-}
-
 @mixin button($background-color, $text-color) {
 	background-color: $background-color;
 	color: $text-color;

@@ -1,0 +1,72 @@
+/* Navigation */
+.nav-menu > li:first-child,
+.page_item {
+	float: left;
+
+	background-color: rgba(0,0,0,0.5);
+}
+
+/* Dropdown */
+.page_item_has_children {
+	position: relative;
+
+	&:hover > .children {
+		display: block;
+	}
+}
+
+.children {
+	position: absolute;
+	display: none;
+
+	.page_item {
+		display: block;
+		float: none;
+	}
+
+	.children {
+		top: 0;
+		left: 100%;
+	}
+}
+
+/* Small menu */
+.menu-toggle,
+.main-navigation.toggled .nav-menu {
+	display: block;
+
+	@include respond-to(36em) {
+		display: none;
+	}
+}
+
+.main-navigation .nav-menu {
+	display: none;
+
+	@include respond-to(36em) {
+		display: block;
+	}
+}
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+/* Pagination */
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
