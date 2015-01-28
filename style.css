@@ -17,28 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 /*
  * Toolbox 
- *
- * Everything that can be re-used.
  */
-/* Classes */
-.centered {
-  display: block;
-  margin: 0 auto; }
-
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5em; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5em; }
-
-.aligncenter {
-  display: block;
-  margin: 0 auto; }
-
 /*
  * Base 
  *
