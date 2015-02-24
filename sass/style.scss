@@ -38,6 +38,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "utils/functions";
 @import "utils/mixins";
 @import "utils/extends";
+@import "utils/helpers";
 
 // Base 
 
@@ -53,6 +54,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  
 // Layout
  
+@import "layout/grid";
 @import "layout/header";
 @import "layout/main";
 @import "layout/footer";
