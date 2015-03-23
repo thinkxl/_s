@@ -35,9 +35,6 @@ button,
 .button,
 a.button {
 	@extend .button-static;
-	
-	font-size: 1em;
-	
 	@include button($button-default-bg, $button-default-text-color);
 }
 
@@ -45,22 +42,17 @@ a.button {
 a.button-primary,
 .button-primary {
 	@extend .button;
-  
-  font-size: 1em;
-  
 	@include button($button-primary-bg, $button-primary-text-color);
 }
 
 a.button-small,
 .button-small {
 	@extend .button;
-
 	font-size: $button-small-font-size;
 }
 
 a.button-large,
 .button-large {
 	@extend .button;
-
 	font-size: $button-large-font-size;
 }
