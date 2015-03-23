@@ -1,0 +1,66 @@
+/*
+ * Buttons 
+ */
+
+.button-static {
+	display: inline-block;
+	padding: 0.318em 1em;
+	border: 0;
+	border-radius: $button-roundness;
+	text-decoration: none;
+	font-family: inherit;
+	line-height: 1;
+	cursor: pointer;
+
+	&:focus {
+		outline: none;	
+	}
+}
+
+@mixin button($background-color, $text-color) {
+	background-color: $background-color;
+	color: $text-color;
+
+	&:hover {
+		background-color: darken($background-color, 15%);
+		color: $text-color;
+	}
+
+	&:active {
+		background-color: darken($background-color, 12%);
+	}
+}
+
+button,
+.button,
+a.button {
+	@extend .button-static;
+	
+	font-size: 1em;
+	
+	@include button($button-default-bg, $button-default-text-color);
+}
+
+
+a.button-primary,
+.button-primary {
+	@extend .button;
+  
+  font-size: 1em;
+  
+	@include button($button-primary-bg, $button-primary-text-color);
+}
+
+a.button-small,
+.button-small {
+	@extend .button;
+
+	font-size: $button-small-font-size;
+}
+
+a.button-large,
+.button-large {
+	@extend .button;
+
+	font-size: $button-large-font-size;
+}
