@@ -7,19 +7,6 @@
 	}
 }
 
-@mixin button($background-color, $text-color) {
-	background-color: $background-color;
-	color: $text-color;
-
-	&:hover {
-		background-color: darken($background-color, 15%);
-	}
-
-	&:active {
-		background-color: darken($background-color, 12%);
-	}
-}
-
 // Center block
 @mixin center-block {
 	display: block;

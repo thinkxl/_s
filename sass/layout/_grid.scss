@@ -1,1 +1,3 @@
+@include namespace('col-');
 
+.col-1-2 { @include fraction(1/2); }

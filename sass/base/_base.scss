@@ -25,10 +25,6 @@ html {
 	font-family: $base-font-family;
 	font-size: $base-font-size;
 	line-height: $base-line-height;
-
-	@include respond-to(38em) {
-		font-size: 20px;
-	}
 }
 
 body {

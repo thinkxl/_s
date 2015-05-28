@@ -11,7 +11,7 @@ $base-margin-top: $baseline;
 $base-margin-bottom: $baseline;
 
 $base-text-color: #333;
-$base-text-link-color: brown;
+$base-text-link-color: #111;
 $base-text-muted-color: lighten($base-text-color, 15%);
 
 $base-font-family: 'PT Sans', sans-serif;
@@ -32,3 +32,16 @@ $h1-font-size: 2.618#{$base-unit};
 $h2-font-size: 1.618#{$base-unit};
 $h3-font-size: 1.125#{$base-unit};
 $h4-font-size: 1#{$base-unit};
+
+// Buttons
+
+$button-roundness: 0.236#{$base-unit};
+
+$button-small-font-size: 0.818#{$base-unit};
+$button-large-font-size: 1.125#{$base-unit};
+
+$button-default-bg: #bbb;
+$button-default-text-color: #333;
+
+$button-primary-bg: #0078E7;
+$button-primary-text-color: lighten($button-primary-bg, 50%);
